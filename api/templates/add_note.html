@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Note</title>
+</head>
+<body>
+    <h2>Add Note</h2>
+    <form action="/add_note" method="post">
+        <label for="first_name">Select First Name:</label>
+        <select name="first_name" id="first_name">
+            <option value="Maksim">Maksim</option>
+            <option value="Filip">Filip</option>
+            <option value="Sebastijan">Sebastijan</option>
+            <option value="Jan">Jan</option>
+            <option value="Stjepan">Stjepan</option>
+            <option value="Lovro">Lovro</option>
+            <option value="Josip">Josip</option>
+            <option value="Kimi">Kimi</option>
+            <option value="Leon">Leon</option>
+        </select>
+        <br>
+        <label for="type">Select Type (+/-):</label>
+        <select name="type" id="type">
+            <option value="+">+</option>
+            <option value="-">-</option>
+        </select>
+        <br>
+        <label for="description">Description:</label><br>
+        <textarea name="description" id="description" rows="4" cols="50"></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+    <br>
+    <a href="/logout">Logout</a>
+</body>
+</html>
+
+

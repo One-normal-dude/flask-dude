@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+</head>
+<body>
+    <h2>Settings</h2>
+    <form action="/settings" method="post">
+        <label for="new_username">New Username:</label><br>
+        <input type="text" id="new_username" name="new_username"><br>
+        <label for="new_password">New Password:</label><br>
+        <input type="password" id="new_password" name="new_password"><br><br>
+        <label for="theme_preference">Theme Preference:</label><br>
+        <select name="theme_preference" id="theme_preference">
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+        </select><br><br>
+        <input type="submit" value="Save Changes">
+    </form>
+    <br>
+    <a href="/logout">Logout</a>
+</body>
+</html>

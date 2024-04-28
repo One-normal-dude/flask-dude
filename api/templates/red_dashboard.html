@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Dashboard</title>
+</head>
+<body>
+    <h2>Welcome, {{ username }}!</h2>
+    <p>You have RED access level. You can overview all the data, edit, and edit settings.</p>
+
+    <!-- Add Note button -->
+    <form action="/add_note">
+        <button type="submit">Add Note</button>
+    </form>
+
+    <br><br>
+
+
+    <br><br>
+    <!-- Logout button -->
+    <form action="/logout">
+        <button type="submit">Logout</button>
+    </form>
+</body>
+</html>
